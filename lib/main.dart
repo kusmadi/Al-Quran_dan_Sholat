@@ -17,7 +17,7 @@ import 'firebase_options.dart';
 
 final GlobalKey<NavigatorState> navKey = GlobalKey<NavigatorState>();
 
-const kWebRecaptchaSiteKey = '6LeS5ZQkAAAAAAadBF-SrUkM2Y3Y52d3g4dVyQUe';
+const kWebRecaptchaSiteKey = '';
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
