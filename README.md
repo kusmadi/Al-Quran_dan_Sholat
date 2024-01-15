@@ -1,4 +1,4 @@
-# yasin
+# Al Qur'an Digital
 
 A new Flutter project.
 
