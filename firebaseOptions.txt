@@ -1,0 +1,29 @@
+For your firebase_core version is seems to be sufficient to pass the FirebaseOptions once you initialize firebase in your flutter code (and you don't need any script tags in your index.html):
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    // Replace with actual values
+    options: FirebaseOptions(
+      apiKey: "XXX",
+      appId: "XXX",
+      messagingSenderId: "XXX",
+      projectId: "XXX",
+    ),
+  );
+  runApp(MyApp());
+}
+Alternatively, one can also follow the updated official documentation and use the Firebase CLI to automatically create a firebase_options.dart file in your lib folder that will define the correct FirebaseOptions for you. The steps are:
+
+Install Flutterfire CLI:
+dart pub global activate flutterfire_cli
+Configure Flutterfire (run in your project's root and go through the wizard selecting the correct Firebase project and target platforms):
+flutterfire configure
+Import the automatically generated firebase_options.dart file in your main.dart file and initialize Firebase as follows:
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(MyApp());
+}

@@ -1,0 +1,96 @@
+import 'dart:async';
+import 'package:flutter/material.dart';
+import 'package:flutter_map/flutter_map.dart';
+import 'package:latlong/latlong.dart';
+import 'package:here_maps_webservice/here_maps_webservice.dart' as here;
+here_maps_webservice
+class MapScreen extends StatefulWidget {
+  @override
+  _MapScreenState createState() => _MapScreenState();
+}
+
+class _MapScreenState extends State<MapScreen> {
+  StreamController<here.PlacesResponse> _streamController;
+  List<Marker> _markers = [];
+  LatLng _currentPosition;
+
+  @override
+  void initState() {
+    super.initState();
+    _streamController = StreamController();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    _streamController.close();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: FlutterMap(
+        options: MapOptions(
+          center: LatLng(0, 0),
+          zoom: 13.0,
+        ),
+        layers: [
+          TileLayerOptions(
+            urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            subdomains: ['a', 'b', 'c'],
+          ),
+          MarkerLayerOptions(markers: _markers)
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _getCurrentLocation,
+        child: Icon(Icons.my_location),
+      ),
+    );
+  }
+
+  _getCurrentLocation() async {
+    _currentPosition = await Geolocator()
+        .getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+    setState(() {
+      _markers.clear();
+      _markers.add(
+        Marker(
+          point: LatLng(_currentPosition.latitude, _currentPosition.longitude),
+          builder: (context) => Container(
+            child: Icon(
+              Icons.location_on,
+              color: Colors.red,
+            ),
+          ),
+        ),
+      );
+
+      _markers.add(
+        Marker(
+          point: LatLng(
+              _currentPosition.latitude + 0.001, _currentPosition.longitude + 0.001),
+          builder: (context) => Container(
+            child: Icon(
+              Icons.location_on,
+              color: Colors.blue,
+            ),
+          ),
+        ),
+      );
+    });
+
+    _getPlaces();
+  }
+
+  _getPlaces() async {
+    here.PlacesResponse response = await here.Places.searchByLocation(
+      'YOUR_API_KEY',
+      currentPosition.latitude,
+      _currentPosition.longitude,
+      'masjid',
+    );
+
+    _streamController.add(response);
+  }
+}
