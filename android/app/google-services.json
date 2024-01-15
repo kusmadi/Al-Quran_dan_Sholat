@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "712683613023",
+    "project_id": "al-qur--an",
+    "storage_bucket": "al-qur--an.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712683613023:android:321bc6d73ba23e382b24ea",
+        "android_client_info": {
+          "package_name": "id.smilecodes.quran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712683613023-o0nj6ivb3iuo024tsf8971epsahfdpm2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.smilecodes.quran",
+            "certificate_hash": "d24915c077c93186c90eb565c6ebb0e19b2d2c71"
+          }
+        },
+        {
+          "client_id": "712683613023-pclr42fqicsq7j83b6000iulpcn86673.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxUJzeB6a9NvzQFjonuy4KeEGuIGxjUUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712683613023-pclr42fqicsq7j83b6000iulpcn86673.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
