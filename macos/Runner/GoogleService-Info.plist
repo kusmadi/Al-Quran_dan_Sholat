@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1096455532682-ac3upd83oaub5p66d2rggrunrj7mj11o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1096455532682-ac3upd83oaub5p66d2rggrunrj7mj11o</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1096455532682-b85t9fiqeldbc4gvnn7od1hkp100ltf6.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCz8SYpzMlTXu5CqJr4IYOeMZsOXLI3RQc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1096455532682</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>id.smilecodes.quran</string>
+	<key>PROJECT_ID</key>
+	<string>quran-9262d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>quran-9262d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1096455532682:ios:000d1797b2ad265fa4fd73</string>
+</dict>
+</plist>
