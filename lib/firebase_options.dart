@@ -44,42 +44,42 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCDqyZ9KOrq6Z01ew05Ys8-_DWNTn2WQtA',
-    appId: '1:712683613023:web:733db48033c482ac2b24ea',
-    messagingSenderId: '712683613023',
-    projectId: 'al-qur--an',
-    authDomain: 'al-qur--an.firebaseapp.com',
-    storageBucket: 'al-qur--an.appspot.com',
-    measurementId: 'G-MFBMY16DTN',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    storageBucket: '',
+    measurementId: '',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDxUJzeB6a9NvzQFjonuy4KeEGuIGxjUUA',
-    appId: '1:712683613023:android:321bc6d73ba23e382b24ea',
-    messagingSenderId: '712683613023',
-    projectId: 'al-qur--an',
-    storageBucket: 'al-qur--an.appspot.com',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyADCkTYPZ0u2SkYjeDpb1lv1zOX32i3QDg',
-    appId: '1:712683613023:ios:1f413bf94e983fb32b24ea',
-    messagingSenderId: '712683613023',
-    projectId: 'al-qur--an',
-    storageBucket: 'al-qur--an.appspot.com',
-    androidClientId: '712683613023-o0nj6ivb3iuo024tsf8971epsahfdpm2.apps.googleusercontent.com',
-    iosClientId: '712683613023-10clth1hqjd4ab8teidvc6dpuiidb5cr.apps.googleusercontent.com',
-    iosBundleId: 'id.smilecodes.quran',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+    androidClientId: '',
+    iosClientId: '',
+    iosBundleId: '',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyADCkTYPZ0u2SkYjeDpb1lv1zOX32i3QDg',
-    appId: '1:712683613023:ios:1f413bf94e983fb32b24ea',
-    messagingSenderId: '712683613023',
-    projectId: 'al-qur--an',
-    storageBucket: 'al-qur--an.appspot.com',
-    androidClientId: '712683613023-o0nj6ivb3iuo024tsf8971epsahfdpm2.apps.googleusercontent.com',
-    iosClientId: '712683613023-10clth1hqjd4ab8teidvc6dpuiidb5cr.apps.googleusercontent.com',
-    iosBundleId: 'id.smilecodes.quran',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+    androidClientId: '',
+    iosClientId: '',
+    iosBundleId: '',
   );
 }
