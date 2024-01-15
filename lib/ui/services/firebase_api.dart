@@ -6,8 +6,7 @@ import 'package:http/http.dart' as http;
 
 class FirebaseApi {
   final String _fcmUrl = 'https://fcm.googleapis.com/fcm/send';
-  final _fcmKey =
-      "AAAApe9A618:APA91bGfe15k7IHSDzWJiJl3pMqd0_I7SPxv_u5qLS4kH_xW5j7Ty9C5d28m5hCAb6Z_1ln798Fsz0cT5cwzSU5dvZMcmIMZDEjLSHoIVkeGlgADfcNW_YJMQLN1VTPbDXtcLt34vn9k";
+  final _fcmKey = "";
 
   void sendFcm(String title, String body, String image) {
     String fcmToken = '';
